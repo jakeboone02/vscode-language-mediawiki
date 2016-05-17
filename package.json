@@ -1,0 +1,39 @@
+{
+    "name": "mediawiki",
+    "displayName": "Mediawiki",
+    "description": "Syntax highlighting for MediaWiki markup",
+    "version": "1.0.0",
+    "publisher": "jakeboone02",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "mediawiki",
+            "aliases": ["Mediawiki", "mediawiki"],
+            "extensions": [".mediawiki",".wikipedia",".wiki"],
+            "configuration": "./mediawiki.configuration.json"
+        }],
+        "grammars": [{
+            "language": "mediawiki",
+            "scopeName": "text.html.mediawiki",
+            "path": "./syntaxes/mediawiki.tmLanguage"
+        }]
+    },
+    "license": "MIT",
+    "icon": "images/mediawikiwiki.png",
+    "galleryBanner": {
+        "color": "#f8fcff",
+        "theme": "light"
+    },
+    "repository": {
+        "type:": "git",
+        "url": "https://github.com/jakeboone02/vscode-language-mediawiki.git"
+    },
+    "bugs": {
+        "url": "https://github.com/jakeboone02/vscode-language-mediawiki/issues"
+    }
+}
