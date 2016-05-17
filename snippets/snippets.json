@@ -1,0 +1,80 @@
+{
+	"redirect": {
+		"prefix": "redirect",
+		"body": "#REDIRECT [[${1:Main Page}]]",
+		"description": "Redirect",
+		"scope": "text.html.mediawiki"
+	},
+	"cn": {
+		"prefix": "cn",
+		"body": "{{${1|cn,Who,Whom,Quantify,When,Time|}|date=`date \"+%B %Y\"`}}",
+		"description": "Citation Needed",
+		"scope": "text.html.mediawiki"
+	},
+	"image": {
+		"prefix": "image",
+		"body": "[[File:${1:TM_SELECTED_TEXT:filename.extension}${2:|${3:width}px}${4:|caption}]]\n\n\nborder|frameless|frame|thumbnail\n\n — Resizes the image to fit within the given maximum width in pixels, without restricting its height;\nx{height}px — Resizes the image to fit within the given maximum height in pixels, without restricting its width;\n{width}x{height}px — Resizes the image to fit within the given width and height in pixels;\n\nleft|right|center\nbaseline|sub|super|top|text-top|middle|bottom|text-bottom\nlink={target}",
+		"description": "Image options",
+		"scope": "text.html.mediawiki"
+	},
+	"image1": {
+		"prefix": "image",
+		"body": "[[File:${1:TM_SELECTED_TEXT:filename.extension}${2:|${3:width}px}${4:|caption}]]",
+		"description": "Image",
+		"scope": "text.html.mediawiki"
+	},
+	"bib": {
+		"prefix": "bib",
+		"body": "== ${1:References} ==\n<references/>",
+		"description": "Insert References list (bib)",
+		"scope": "text.html.mediawiki"
+	},
+	"tab": {
+		"prefix": "tab",
+		"body": "{| class=\"sortable wikitable\" style=\"font-size: 100%; text-align: center;\"\n! ${1:col1Name}\n! ${2:col2Name}\n! ${3:col3Name}\n|-\n| ${4:r1 $1} || ${5:r1 $2} || ${6:r1 $3}\n|-\n| ${7:r1 $1} || ${8:r1 $2} || ${9:r1 $3}\n|}",
+		"description": "Insert Table",
+		"scope": "text.html.mediawiki"
+	},
+	"un": {
+		"prefix": "un",
+		"body": "\n# ",
+		"description": "Ordered List Item",
+		"scope": "markup.list.numbered.mediawiki"
+	},
+	"ref": {
+		"prefix": "ref",
+		"body": "<ref name=\"${1:label}\"> {{Cite doi|${2:10.1146/annurev.earth.33.092203.122621}}}</ref>",
+		"description": "Reference DOI",
+		"scope": "text.html.mediawiki"
+	},
+	"ref1": {
+		"prefix": "ref",
+		"body": "<ref name=\"${1:label}\"> {{Cite pmid|${2:12122621}}}</ref>",
+		"description": "Reference PMID",
+		"scope": "text.html.mediawiki"
+	},
+	"ref2": {
+		"prefix": "ref",
+		"body": "<ref name=\"${1/.*\\b(\\w+)\\s*$/$1/}$3\"> ${1:Author}${2:,Other Authors}, (${3:Year}). ${4:Title, Source}.</ref>",
+		"description": "Reference <ref>Author (year)...</ref>",
+		"scope": "text.html.mediawiki"
+	},
+	"code": {
+		"prefix": "code",
+		"body": "<!-- http://www.mediawiki.org/wiki/Extension:SyntaxHighlight -->\n<syntaxhighlight lang=\"${1|rsplus,php|}\"${2: line=\"${3:0}\" line start=\"${4:1}\" highlight=\"${5:1}\" enclose=\"${6|pre,div,none|}\"}>\n\n</syntaxhighlight>\n",
+		"description": "syntaxhighlight",
+		"scope": "text.html.mediawiki"
+	},
+	"un1": {
+		"prefix": "un",
+		"body": "\n|-\n||${1:cell}||${2:cell}||",
+		"description": "Insert Row",
+		"scope": "markup.other.table.row.mediawiki"
+	},
+	"un2": {
+		"prefix": "un",
+		"body": "\n* ",
+		"description": "Unordered Item",
+		"scope": "markup.list.unnumbered.mediawiki"
+	}
+}
